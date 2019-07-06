@@ -70,7 +70,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:3000/wptest'
+    proxy: 'localhost:8888/inhabitent-site'
   });
 
   gulp.watch(files).on('change', browserSync.reload);
