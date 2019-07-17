@@ -16,11 +16,11 @@
 					</div>
 					<div class="footer-logo"></div>
 					
+				</section>
 					<div class="copyright">
 						<p>copyright © 2019 inhabitent</p>
 						<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a>
 					</div>
-				</section>
 			</footer>
 			</div>
 

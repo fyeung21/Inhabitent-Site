@@ -420,11 +420,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: black; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -669,18 +669,16 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site {
-  max-width: 1400px;
-  margin: 0 auto; }
-
 .site-header {
   background-color: #ccc;
   padding: 1rem; }
 
 .site-content {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #ccc;
   padding: 1rem;
-  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -697,55 +695,57 @@ object {
     padding-left: 3rem;
     border-left: #ccc; }
 
-.site-footer {
-  margin: 1rem 0;
-  padding: 1rem; }
-
 /* Front page */
-.home .site {
-  max-width: 90%;
-  margin: 0 auto; }
-
 .home .site-header {
   background-color: lightcoral; }
 
-.site-info {
-  background-image: url("../../images/dark-wood.png");
-  background-size: 512px 512px;
-  text-align: center;
-  width: 1400px;
-  padding: 100px;
-  color: white;
+.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../../images/dark-wood.png");
+  background-size: 512px 512px;
+  text-align: center;
+  padding: 80px;
+  color: #fff; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  text-align: left; }
   .site-info h2 {
-    color: orange; }
+    color: #d99054; }
   .site-info .contact {
     display: block;
     max-width: 300px;
-    padding: 2rem; }
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%; }
   .site-info .business-hours {
     display: block;
-    max-width: 300px;
-    padding: 2rem; }
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%; }
     .site-info .business-hours span {
       font-weight: bold; }
   .site-info .footer-logo {
     background-image: url("../../images/logos/inhabitent-logo-text.svg");
-    z-index: 1;
     width: 300px;
     height: 80px;
     background-size: contain;
-    background-repeat: no-repeat; }
-  .site-info .copyright {
-    text-align: center; }
+    background-repeat: no-repeat;
+    text-align: right;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%; }
+
+.copyright {
+  text-align: center;
+  text-transform: uppercase; }
