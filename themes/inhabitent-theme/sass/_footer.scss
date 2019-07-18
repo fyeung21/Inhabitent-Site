@@ -4,25 +4,31 @@
   background-image: url("../../images/dark-wood.png");
   background-size: 512px 512px;
   text-align: center;
-  padding: 80px;
+  padding: 40px 100px;
   color: #fff;
 }
 .site-info {
   display: flex;
-  width:100%;
+  width: 100%;
   flex-direction: row;
-  text-align:left;
+  text-align: left;
   h2 {
     color: $color_orange;
+    text-transform: uppercase;
   }
   .contact {
     display: block;
     max-width: 300px;
-    flex-basis:20%;
+    flex-basis: 20%;
+    span{
+        font-size:20px;
+        color:#fff;
+        margin:5px;
+    }
   }
   .business-hours {
     display: block;
-    flex-basis:60%;
+    flex-basis: 50%;
     span {
       font-weight: bold;
     }
@@ -33,11 +39,11 @@
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
-    text-align:right;
-    flex-basis:20%;
+    text-align: right;
   }
 }
 .copyright {
   text-align: center;
   text-transform: uppercase;
+  font-family:"Novacento Sans Web", Arial, sans-serif;
 }
