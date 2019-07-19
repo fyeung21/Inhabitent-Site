@@ -389,9 +389,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Novovento Sans Web", Arial, sans-serif; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -576,11 +573,23 @@ a {
     outline: 0; }
 
 /* Menus */
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem 0 1rem;
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header .site-description {
+    background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+    background-repeat: no-repeat; }
+  .site-header .site-branding {
+    -ms-flex-preferred-size: 69%;
+        flex-basis: 69%; }
+
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: left; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -606,8 +615,11 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -814,16 +826,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site-header {
-  background-color: #ccc;
-  padding: 1rem; }
-
 .site-content {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   background-color: #ccc;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -838,11 +845,11 @@ object {
             flex: 1;
     background-color: yellow;
     padding-left: 3rem;
-    border-left: #ccc; }
+    border-left: 1px solid #e1e1e1; }
 
 /* Front page */
-.home .site-header {
-  background-color: lightcoral; }
+.site-header {
+  border-bottom: 1px solid #e1e1e1; }
 
 .site-footer {
   display: -webkit-box;

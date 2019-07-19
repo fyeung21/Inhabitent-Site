@@ -1,21 +1,12 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site {
-    // max-width:1400px;
-    // margin:0 auto;
-}
-.site-header {
-    background-color:#ccc;
-    padding:1rem;
-}
+
 .site-content {
     max-width:1400px;
     width: 100%;
     margin:0 auto;
     background-color:#ccc;
-    padding:1rem;
-    // margin:1rem 0;
     display:flex;
     .content-area {
         flex:2;
@@ -25,21 +16,12 @@
         flex:1;
         background-color: yellow;
         padding-left:3rem;
-        border-left:#ccc;
+        border-left:1px solid #e1e1e1;
     }
 }
-.site-footer {
-    // margin:1rem 0;
-    // padding:1rem;
-}
+
 /* Front page */
-.home {
-    // .site {
-    //     max-width: 90%;
-    //     margin:0 auto;
-    // }
-    
-    .site-header {
-        background-color:lightcoral;
-    }
+
+.site-header {
+    border-bottom: 1px solid #e1e1e1;
 }

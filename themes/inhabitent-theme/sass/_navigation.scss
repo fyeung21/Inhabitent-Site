@@ -25,12 +25,22 @@ a {
 }
 
 /* Menus */
-
+.site-header {
+	display:flex;
+	padding:0 1rem 0 1rem;
+	border-bottom: 1px solid #e1e1e1;
+	.site-description {
+		background-image: url("../../images/logos/inhabitent-logo-tent.svg");
+		background-repeat: no-repeat;
+	}
+	.site-branding {
+		flex-basis: 69%;
+	}
+}
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
 
 	ul {
 		display: none;
@@ -77,8 +87,10 @@ a {
 		}
 	}
 	li {
-		float: left;
+		display:inline-block;
 		position: relative;
+		padding:1rem;
+		align-self: flex-end;
 
 		&:hover > a,
 		&.focus > a {
