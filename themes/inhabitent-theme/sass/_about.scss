@@ -1,0 +1,15 @@
+/* About Page */
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  p {
+    text-align: center;
+  }
+  nav {a:hover {
+      color:$color_yellow;
+  }}
+}
+.hero-image-header {
+  max-width: 100%;
+}
