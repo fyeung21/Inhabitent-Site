@@ -964,13 +964,28 @@ object {
   font-family: "Novacento Sans Web", Arial, sans-serif; }
 
 /* About Page */
-.about-container {
-  max-width: 800px;
-  margin: 0 auto; }
-  .about-container p {
-    text-align: center; }
-  .about-container nav a:hover {
-    color: #f0e4d1; }
+.page-id-21 .template-container {
+  max-width: 100%; }
+  .page-id-21 .template-container .content-area {
+    padding: 0; }
+    .page-id-21 .template-container .content-area .site-main {
+      max-width: 100%; }
+      .page-id-21 .template-container .content-area .site-main .entry-content {
+        max-width: 100%;
+        margin: 0; }
+      .page-id-21 .template-container .content-area .site-main .entry-header {
+        display: none; }
+      .page-id-21 .template-container .content-area .site-main p {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem; }
+      .page-id-21 .template-container .content-area .site-main h2 {
+        text-align: center; }
+      .page-id-21 .template-container .content-area .site-main nav a:hover {
+        color: #f0e4d1; }
 
 .hero-image-header {
-  max-width: 100%; }
+  max-width: 100%;
+  padding: 100px; }
+  .hero-image-header .entry-title {
+    color: #f0e4d1; }
