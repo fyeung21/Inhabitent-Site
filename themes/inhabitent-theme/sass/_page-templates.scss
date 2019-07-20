@@ -2,26 +2,87 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.site-header {
+  border-bottom: 1px solid #e1e1e1;
+  .site-branding {
+    flex-basis: 50%;
+    img {
+      background-repeat: no-repeat;
+      width: 10%;
+    }
+  }
+}
+.header-container {
+  display: flex;
+  max-width: 78%;
+  margin: 0 auto;
+  align-items: baseline;
+  line-height: 0;
+}
 .site-content {
-    max-width:1400px;
-    width: 100%;
-    margin:0 auto;
-    background-color:#ccc;
-    display:flex;
-    .content-area {
-        flex:2;
-        background-color: orange;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  .content-area {
+    flex: 3;
+    padding-right: 2rem;
+  }
+  .entry-title {
+    color: $color_purple;
+    text-transform: uppercase;
+  }
+}
+.template-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Featured Image */
+
+.journal-entry {
+  padding: 3rem 0 0;
+  .entry-header {
+    background-color: $color_green;
+    width: 550px;
+    position: absolute;
+    padding: 0.5rem 2rem;
+    line-height: 1.25;
+    margin-top: 2.5rem;
+    h1 {
+      margin: 0;
     }
-    .widget-area {
-        flex:1;
-        background-color: yellow;
-        padding-left:3rem;
-        border-left:1px solid #e1e1e1;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 33.6px;
     }
+  }
+  img {
+    width: 800px;
+  }
+  .read-more {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 0.8rem 1.8rem;
+    font-family: $font_accent;
+    font-size: 14px;
+    &:hover {
+      background-color: $color_green;
+      color: #fff;
+      border: 1px solid $color_green;
+    }
+  }
+  p {
+    margin: 1.5rem 0;
+  }
 }
 
 /* Front page */
 
 .site-header {
-    border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }

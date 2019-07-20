@@ -18,13 +18,10 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family:$font_accent;
+	color:$color_purple;
 }
 
 /* Copy */
-
-// p {
-// 	margin-bottom: $base__space-unit;
-// }
 
 dfn, cite, em, i {
 	font-style: italic;

@@ -20,17 +20,21 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header " role="banner">
+			<div class="header-container">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<p class="site-description"></p>
+					
+					<a href="<?php bloginfo( 'url' ); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/logos/inhabitent-logo-tent.svg" alt="homepage"></a>
+
 				</div><!-- .site-branding -->
 				
-				<!-- <div class="inhabitent-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a></div> -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+			</div>
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content template-container">
