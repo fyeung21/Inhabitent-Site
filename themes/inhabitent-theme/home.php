@@ -21,15 +21,11 @@ get_header(); ?>
         <?php if ($journal_posts->have_posts()) : ?>
 
             <?php while ($journal_posts->have_posts()) : $journal_posts->the_post(); ?>
-                <div class="journal-entry">
-                    <h1 class="entry-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                    <?php the_post_thumbnail(); ?>
-                    <div class="entry-meta">
-                        <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-                    </div>
-                    <p><?php the_excerpt(); ?></p>
-                    <p><a class="read-more" href="<?php the_permalink(); ?>">read more →</a></p>
-                </div>
+
+            <?php get_template_part( 'template-parts/content', '' ); ?>
+
+            <p><a class="read-more" href="<?php the_permalink(); ?>">read more →</a></p>
+            
             <?php endwhile; ?>
 
             <?php the_posts_navigation(); ?>

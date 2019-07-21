@@ -763,6 +763,21 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+/* Journal Home */
+.read-more {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0.8rem 1.8rem;
+  font-family: "Novovento Sans Web", Arial, sans-serif;
+  font-size: 14px; }
+  .read-more:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #248A83; }
+  .read-more:visited {
+    color: #000; }
+
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -879,38 +894,67 @@ object {
   margin: 0 auto; }
 
 /* Featured Image */
-.journal-entry {
-  padding: 3rem 0 0; }
-  .journal-entry .entry-header {
-    background-color: #248A83;
-    width: 550px;
-    position: absolute;
-    padding: 0.5rem 2rem;
-    line-height: 1.25;
-    margin-top: 2.5rem; }
-    .journal-entry .entry-header h1 {
-      margin: 0; }
-    .journal-entry .entry-header a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 33.6px; }
-  .journal-entry img {
-    width: 800px; }
-  .journal-entry .read-more {
-    color: #000;
+.type-post .entry-title {
+  background-color: #248A83;
+  width: 550px;
+  position: absolute;
+  padding: 0.5rem 2rem;
+  line-height: 1.25;
+  margin-top: 2.5rem; }
+  .type-post .entry-title h1 {
+    margin: 0; }
+  .type-post .entry-title a {
+    color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #000;
-    padding: 0.8rem 1.8rem;
-    font-family: "Novovento Sans Web", Arial, sans-serif;
-    font-size: 14px; }
-    .journal-entry .read-more:hover {
-      background-color: #248A83;
-      color: #fff;
-      border: 1px solid #248A83; }
-  .journal-entry p {
-    margin: 1.5rem 0; }
+    font-size: 33.6px; }
+
+.type-post img {
+  width: 800px;
+  margin-top: 2rem; }
+
+.type-post p {
+  margin: 1.5rem 0; }
+
+.type-post .entry-meta {
+  background-color: #248A83;
+  color: #fff;
+  font-family: "Novovento Sans Web", Arial, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 0.5rem 2rem; }
+
+.single-post .entry-title {
+  background-color: #248A83;
+  width: 550px;
+  position: absolute;
+  padding: 0.5rem 2rem;
+  line-height: 1.25;
+  margin-top: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 33.6px; }
+
+.single-post img {
+  width: 800px;
+  margin-top: 2rem; }
+
+.single-post p {
+  margin: 1.5rem 0; }
+
+.single-post .entry-meta {
+  background-color: #248A83;
+  color: #fff;
+  font-family: "Novovento Sans Web", Arial, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 0.5rem 2rem; }
+  .single-post .entry-meta a {
+    color: #fff;
+    text-decoration: none; }
+    .single-post .entry-meta a:hover {
+      color: #f0e4d1; }
 
 .site-footer {
   display: -webkit-box;

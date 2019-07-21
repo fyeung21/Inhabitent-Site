@@ -40,9 +40,8 @@
 
 /* Featured Image */
 
-.journal-entry {
-  padding: 3rem 0 0;
-  .entry-header {
+.type-post {
+  .entry-title {
     background-color: $color_green;
     width: 550px;
     position: absolute;
@@ -61,22 +60,55 @@
   }
   img {
     width: 800px;
-  }
-  .read-more {
-    color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid #000;
-    padding: 0.8rem 1.8rem;
-    font-family: $font_accent;
-    font-size: 14px;
-    &:hover {
-      background-color: $color_green;
-      color: #fff;
-      border: 1px solid $color_green;
-    }
+    margin-top: 2rem;
   }
   p {
     margin: 1.5rem 0;
+  }
+  
+  .entry-meta {
+    background-color: $color_green;
+    color:#fff;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 0.5rem 2rem;
+  }
+}
+
+.single-post {
+  .entry-title {
+    background-color: $color_green;
+    width: 550px;
+    position: absolute;
+    padding: 0.5rem 2rem;
+    line-height: 1.25;
+    margin-top: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 33.6px;
+  }
+  img {
+    width: 800px;
+    margin-top: 2rem;
+  }
+  p {
+    margin: 1.5rem 0;
+  }
+  .entry-meta {
+    background-color: $color_green;
+    color:#fff;
+    font-family: $font_accent;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 0.5rem 2rem;
+    a {
+      color:#fff;
+      text-decoration:none;
+      &:hover {
+        color:$color_yellow;
+      }
+    }
   }
 }
