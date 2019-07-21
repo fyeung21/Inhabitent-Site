@@ -726,6 +726,13 @@ a {
     .widget-area ul a {
       text-decoration: none; }
 
+.error-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .error-404 .page-content {
+    margin-right: 2.5rem; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }

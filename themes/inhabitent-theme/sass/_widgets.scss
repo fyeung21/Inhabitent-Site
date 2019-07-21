@@ -28,6 +28,13 @@
   }
 }
 
+.error-404 {
+	display:flex;
+	.page-content{
+		margin-right:2.5rem;
+	}
+}
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none;
