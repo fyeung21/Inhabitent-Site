@@ -387,7 +387,8 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Novovento Sans Web", Arial, sans-serif;
-  color: #2f1339; }
+  color: #2f1339;
+  text-transform: uppercase; }
 
 /* Copy */
 dfn, cite, em, i {
@@ -863,7 +864,7 @@ object {
             flex: 3;
     padding-right: 2rem; }
   .site-content .entry-title {
-    color: #2f1339;
+    color: #404040;
     text-transform: uppercase; }
 
 .template-container {
@@ -903,10 +904,6 @@ object {
       border: 1px solid #248A83; }
   .journal-entry p {
     margin: 1.5rem 0; }
-
-/* Front page */
-.site-header {
-  border-bottom: 1px solid #e1e1e1; }
 
 .site-footer {
   display: -webkit-box;
@@ -988,4 +985,4 @@ object {
   max-width: 100%;
   padding: 100px; }
   .hero-image-header .entry-title {
-    color: #f0e4d1; }
+    color: #fff; }

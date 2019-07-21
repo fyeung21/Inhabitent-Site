@@ -29,7 +29,7 @@
     padding-right: 2rem;
   }
   .entry-title {
-    color: $color_purple;
+    color: $color__text-main;
     text-transform: uppercase;
   }
 }
@@ -79,10 +79,4 @@
   p {
     margin: 1.5rem 0;
   }
-}
-
-/* Front page */
-
-.site-header {
-  border-bottom: 1px solid #e1e1e1;
 }
