@@ -1037,3 +1037,71 @@ object {
   padding: 100px; }
   .hero-image-header .entry-title {
     color: #fff; }
+
+/* Product Archives */
+.post-type-archive .page-header {
+  text-align: center;
+  border-bottom: 1px dashed #a1a1a1;
+  margin-bottom: 3rem; }
+  .post-type-archive .page-header h1 {
+    color: #404040;
+    margin-top: 3rem; }
+  .post-type-archive .page-header .taxonomy-description {
+    color: #248A83;
+    font-family: "Novovento Sans Web", Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0 3rem 0; }
+
+.post-type-archive .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  /* delete later*/
+  /* end */ }
+  .post-type-archive .product-grid a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Merriweather", Arial, serif; }
+  .post-type-archive .product-grid .product-grid-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .post-type-archive .product-grid .product-grid-item .entry-header {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      border: 1px solid #808080;
+      color: #000;
+      padding: 0 12px;
+      text-transform: capitalize;
+      font-family: "Merriweather", Arial, serif; }
+      .post-type-archive .product-grid .product-grid-item .entry-header .entry-title {
+        margin: 0; }
+
+/* Single Product */
+.product-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .product-entry .product-description .entry-title {
+    color: #d99054; }
+  .product-entry .product-description .price {
+    font-family: "Novovento Sans Web", Arial, sans-serif; }
+  .product-entry .product-description .social-media-btn span {
+    padding: 0 0.5rem 0 0; }
+  .product-entry .product-description .social-media-btn a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 0.8rem 1.8rem;
+    font-family: "Novovento Sans Web", Arial, sans-serif;
+    font-size: 14px; }
+    .product-entry .product-description .social-media-btn a:hover {
+      background-color: #248A83;
+      color: #fff;
+      border: 1px solid #248A83; }
+    .product-entry .product-description .social-media-btn a:visited {
+      color: #000; }
+  .product-entry .product-description .entry-footer {
+    margin: 2.5rem 0 8rem 0; }
