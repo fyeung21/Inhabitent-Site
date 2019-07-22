@@ -386,7 +386,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Novovento Sans Web", Arial, sans-serif;
+  font-family: "Novocento Sans Web", Arial, sans-serif;
   color: #2f1339;
   text-transform: uppercase; }
 
@@ -579,7 +579,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  font-family: "Novovento Sans Web", Arial, sans-serif;
+  font-family: "Novocento Sans Web", Arial, sans-serif;
   text-transform: uppercase; }
   .main-navigation ul {
     display: none;
@@ -769,14 +769,12 @@ a {
   text-decoration: none;
   border: 1px solid #000;
   padding: 0.8rem 1.8rem;
-  font-family: "Novovento Sans Web", Arial, sans-serif;
+  font-family: "Novocento Sans Web", Arial, sans-serif;
   font-size: 14px; }
   .read-more:hover {
     background-color: #248A83;
     color: #fff;
     border: 1px solid #248A83; }
-  .read-more:visited {
-    color: #000; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -919,7 +917,7 @@ object {
 .type-post .entry-meta {
   background-color: #248A83;
   color: #fff;
-  font-family: "Novovento Sans Web", Arial, sans-serif;
+  font-family: "Novocento Sans Web", Arial, sans-serif;
   text-transform: uppercase;
   position: absolute;
   padding: 0.5rem 2rem; }
@@ -946,7 +944,7 @@ object {
 .single-post .entry-meta {
   background-color: #248A83;
   color: #fff;
-  font-family: "Novovento Sans Web", Arial, sans-serif;
+  font-family: "Novocento Sans Web", Arial, sans-serif;
   text-transform: uppercase;
   position: absolute;
   padding: 0.5rem 2rem; }
@@ -1048,7 +1046,7 @@ object {
     margin-top: 3rem; }
   .post-type-archive .page-header .taxonomy-description {
     color: #248A83;
-    font-family: "Novovento Sans Web", Arial, sans-serif;
+    font-family: "Novocento Sans Web", Arial, sans-serif;
     text-transform: uppercase;
     margin: 1rem 0 3rem 0; }
 
@@ -1086,7 +1084,7 @@ object {
   .product-entry .product-description .entry-title {
     color: #d99054; }
   .product-entry .product-description .price {
-    font-family: "Novovento Sans Web", Arial, sans-serif; }
+    font-family: "Novocento Sans Web", Arial, sans-serif; }
   .product-entry .product-description .social-media-btn span {
     padding: 0 0.5rem 0 0; }
   .product-entry .product-description .social-media-btn a {
@@ -1095,7 +1093,7 @@ object {
     text-decoration: none;
     border: 1px solid #000;
     padding: 0.8rem 1.8rem;
-    font-family: "Novovento Sans Web", Arial, sans-serif;
+    font-family: "Novocento Sans Web", Arial, sans-serif;
     font-size: 14px; }
     .product-entry .product-description .social-media-btn a:hover {
       background-color: #248A83;
@@ -1105,3 +1103,71 @@ object {
       color: #000; }
   .product-entry .product-description .entry-footer {
     margin: 2.5rem 0 8rem 0; }
+
+.page-id-109 h1 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.page-id-109 .home-container {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.page-id-109 .home-shop-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-id-109 .home-shop-item {
+  border: 1px solid #e1e1e1;
+  margin: 2rem 0;
+  border-top: 3px solid #e1e1e1; }
+  .page-id-109 .home-shop-item:hover {
+    border: 1px solid #d99054;
+    border-top: 3px solid #d99054; }
+  .page-id-109 .home-shop-item .shop-icon {
+    max-width: 100%;
+    margin: 0;
+    text-align: center; }
+  .page-id-109 .home-shop-item .category-description {
+    text-align: center; }
+  .page-id-109 .home-shop-item .category-btn {
+    font-family: "Novocento Sans Web", Arial, sans-serif;
+    text-align: center; }
+    .page-id-109 .home-shop-item .category-btn p {
+      margin: 2rem; }
+      .page-id-109 .home-shop-item .category-btn p a {
+        margin: 0 1rem;
+        background-color: #248A83;
+        border: 1px solid #248A83;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem; }
+        .page-id-109 .home-shop-item .category-btn p a:hover {
+          background-color: #19625d;
+          color: #fff; }
+
+.page-id-109 .home-post-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-id-109 .home-post-grid .home-post-item {
+    border: 1px solid #e1e1e1;
+    margin: 2rem 0; }
+    .page-id-109 .home-post-grid .home-post-item h2 {
+      margin: 0; }
+      .page-id-109 .home-post-grid .home-post-item h2 a {
+        text-decoration: none; }
+    .page-id-109 .home-post-grid .home-post-item .post-image {
+      max-width: 100%;
+      margin: 0 auto;
+      background-size: contain; }
+    .page-id-109 .home-post-grid .home-post-item .post-info-container {
+      border-top: 3px solid #e1e1e1;
+      padding: 1rem; }
+      .page-id-109 .home-post-grid .home-post-item .post-info-container p {
+        margin: 0; }
+        .page-id-109 .home-post-grid .home-post-item .post-info-container p a {
+          color: #000; }
+          .page-id-109 .home-post-grid .home-post-item .post-info-container p a:hover {
+            color: #fff; }

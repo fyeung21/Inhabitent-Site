@@ -1,0 +1,85 @@
+.page-id-109 {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .home-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .home-shop-grid {
+    display: flex;
+  }
+
+  .home-shop-item {
+    border: 1px $solid_border;
+    margin: 2rem 0;
+    border-top: 3px $solid_border;
+    &:hover {
+      border: 1px solid $color_orange;
+      border-top: 3px solid $color_orange;
+    }
+
+    .shop-icon {
+      max-width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+
+    .category-description {
+      text-align: center;
+    }
+    .category-btn {
+      font-family: $font_accent;
+      text-align: center;
+      p {
+        margin: 2rem;
+        a {
+          margin: 0 1rem;
+          background-color: $color_green;
+          border: 1px solid $color_green;
+          color: #fff;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 1rem;
+          &:hover {
+            background-color: darken($color_green, 10%);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .home-post-grid {
+    display: flex;
+    .home-post-item {
+      border: 1px $solid_border;
+      margin: 2rem 0;
+      h2 {
+        margin: 0;
+        a {
+          text-decoration: none;
+        }
+      }
+      .post-image {
+        max-width: 100%;
+        margin: 0 auto;
+        background-size:contain;
+      }
+      .post-info-container {
+        border-top: 3px $solid_border;
+        padding: 1rem;
+        p {
+          margin: 0;
+          a {
+            color: #000;
+            &:hover{
+                color:#fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
