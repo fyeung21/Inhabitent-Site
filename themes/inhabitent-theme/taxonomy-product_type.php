@@ -2,28 +2,31 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main post-type-archive" role="main">
 
         <header class="page-header">
             <?php
             echo '<h1 class="page-title">' . single_term_title('', false) . '</h1>';
-            the_archive_description('<div class="taxonomy-description">', '</div>');
+            the_archive_description('<div class="type-description"><p>', '<p></div>');
             ?>
         </header>
 
-        <?php if (have_posts()) : ?>
+        <?php $args = array(
+            'order' => 'ASC',
+            'post_type' => 'product',
+        ); ?>
+        <?php $product_posts = new WP_Query($args); ?>
 
-            <?php while (have_posts()) : the_post(); ?>
+        <?php if ($product_posts->have_posts()) : ?>
 
-                <p><?php the_title(); ?></p>
-                <div class="product-thumbnail" style="background-image:url(<?php echo CFS()->get('product_featured_image'); ?>)"></div>
-                <div class="product-price">
-                    <p><?php echo CFS()->get('price'); ?></p>
-                </div>
+            <div class="product-grid">
 
-            <?php endwhile; ?>
+                <?php while (have_posts()) : the_post(); ?>
 
-            <?php the_posts_navigation(); ?>
+                    <?php get_template_part('template-parts/content', 'product'); ?>
+
+                <?php endwhile; ?>
+            </div>
 
         <?php else : ?>
 
@@ -35,5 +38,4 @@ get_header(); ?>
     </main>
 </div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
