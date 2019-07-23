@@ -1,11 +1,10 @@
 .site-footer {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../../images/dark-wood.png");
-  background-size: 512px 512px;
+  color: #fff;
+}
+.footer-background {
+  height:350px;
   text-align: center;
   padding: 40px 100px;
-  color: #fff;
 }
 .site-info {
   display: flex;
@@ -20,10 +19,11 @@
     display: block;
     max-width: 300px;
     flex-basis: 20%;
-    span{
-        font-size:20px;
-        color:#fff;
-        margin:5px;
+    margin-left:3rem;
+    span {
+      font-size: 20px;
+      color: #fff;
+      margin: 5px;
     }
   }
   .business-hours {
@@ -34,16 +34,14 @@
     }
   }
   .footer-logo {
-    background-image: url("../../images/logos/inhabitent-logo-text.svg");
     width: 300px;
     height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    margin-top: 2rem;
     text-align: right;
   }
 }
 .copyright {
   text-align: center;
   text-transform: uppercase;
-  font-family:"Novacento Sans Web", Arial, sans-serif;
+  font-family: $font_accent_normal;
 }
