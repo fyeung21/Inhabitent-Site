@@ -106,28 +106,25 @@
   }
 }
 
-/* Comments */
-
-.comment-reply-title {
-  font-size: 28px;
-  color: $color__text-main;
-  margin-top: 4rem;
-}
-.comment-form-comment {
-  font-family: $font_accent;
-  font-size: 18px;
+.read-more {
   text-transform: uppercase;
-  color: $color_purple;
-}
-.form-submit {
-  margin-bottom: 7rem;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 0.8rem 1.8rem;
+  font-family: $font_accent;
+  font-size: 14px;
+  &:hover {
+    background-color: $color_green;
+    color: #fff;
+    border: 1px solid $color_green;
+  }
 }
 
 /* Find Us */
 
 .post-28 {
   .entry-content {
-    margin-bottom:7rem;
+    margin-bottom: 7rem;
     iframe {
       width: 750px;
     }
