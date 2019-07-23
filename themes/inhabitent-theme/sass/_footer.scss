@@ -2,7 +2,7 @@
   color: #fff;
 }
 .footer-background {
-  height:350px;
+  height: 350px;
   text-align: center;
   padding: 40px 100px;
 }
@@ -19,11 +19,21 @@
     display: block;
     max-width: 300px;
     flex-basis: 20%;
-    margin-left:3rem;
+    margin-left: 3rem;
     span {
       font-size: 20px;
       color: #fff;
       margin: 5px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:visited {
+        color: #fff;
+      }
     }
   }
   .business-hours {

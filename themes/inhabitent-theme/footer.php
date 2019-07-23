@@ -5,7 +5,7 @@
 					<section class="site-info">
 						<div class="contact">
 							<h2>Contact</h2>
-							<p><span><i class="fa fa-envelope" aria-hidden="true"></i></span>info@inhabitent.com</p>
+							<p><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 							<p><span><i class="fa fa-phone" aria-hidden="true"></i></span>778-456-7891</p>
 							<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
 							<span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>

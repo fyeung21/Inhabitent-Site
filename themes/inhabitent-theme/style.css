@@ -979,6 +979,13 @@ object {
       font-size: 20px;
       color: #fff;
       margin: 5px; }
+    .site-info .contact a {
+      color: #fff;
+      text-decoration: none; }
+      .site-info .contact a:hover {
+        text-decoration: underline; }
+      .site-info .contact a:visited {
+        color: #fff; }
   .site-info .business-hours {
     display: block;
     -ms-flex-preferred-size: 50%;
