@@ -2,32 +2,62 @@
   h1 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: 4rem;
   }
+
+  .template-container {
+    max-width: 100%;
+    margin: 0 auto;
+    .content-area {
+      padding: 0;
+    }
+  }
+
+  .home-hero-image {
+    .home-hero {
+      position: relative;
+    }
+    .tent-logo {
+      img {
+        position: absolute;
+        left: 40%;
+        top: 20%;
+        z-index: 1;
+      }
+    }
+  }
+
   .home-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .home-shop-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25rem;
   }
 
   .home-shop-item {
     border: 1px $solid_border;
     margin: 2rem 0;
-    border-top: 3px $solid_border;
+    border-top: 5px $solid_border;
     &:hover {
       border: 1px solid $color_orange;
-      border-top: 3px solid $color_orange;
+      border-top: 5px solid $color_orange;
     }
-
     .shop-icon {
-      max-width: 100%;
-      margin: 0;
-      text-align: center;
+      margin: 1rem;
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 75px;
+      }
     }
-
     .category-description {
       text-align: center;
+      margin: 1rem;
     }
     .category-btn {
       font-family: $font_accent;
@@ -52,32 +82,45 @@
   }
 
   .home-post-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 4rem 0 6rem;
     .home-post-item {
       border: 1px $solid_border;
-      margin: 2rem 0;
       h2 {
         margin: 0;
         a {
           text-decoration: none;
+          font-size: 20px;
         }
       }
       .post-image {
         max-width: 100%;
         margin: 0 auto;
-        background-size:contain;
+        img {
+          height: auto;
+        }
       }
       .post-info-container {
-        border-top: 3px $solid_border;
+        border-top: 5px $solid_border;
         padding: 1rem;
+        height: 220px;
         p {
           margin: 0;
           a {
             color: #000;
-            &:hover{
-                color:#fff;
+            &:hover {
+              color: #fff;
             }
           }
+        }
+        .posted-on {
+          font-size: 13px;
+        }
+        .read-more {
+          bottom: -30px;
+          position: relative;
         }
       }
     }

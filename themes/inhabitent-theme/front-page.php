@@ -12,9 +12,11 @@ get_header(); ?>
         <?php endif; ?>
 
         <section class="home-hero-image">
-            <!-- hero image here -->
-            <div class="tent-logo">
-                <!-- logo -->
+            <div class="home-hero">
+                <?php echo '<img  src="' . wp_get_attachment_url(24) . '" alt="welcome to inhabitent" />'; ?>
+                <div class="tent-logo">
+                    <?php echo '<img src="' . wp_get_attachment_url(130) . '" alt="inhabitent logo" />'; ?>
+                </div>
             </div>
         </section>
 
@@ -23,68 +25,46 @@ get_header(); ?>
             <h1>shop stuff</h1>
 
             <article class="home-shop-grid">
+            <?php $terms = get_terms(array(
+					'taxonomy' => 'product_type',
+					'hide_empty' => false,
+				)); ?>
 
-                <div class="home-shop-item">
-                    <div class="shop-icon">
-                        <img src="images/product-type-icons/do.svg">
-                    </div>
-                    <div class="category-description">
-                        <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-                    </div>
-                    <div class="category-btn">
-                        <p><a href="<?php the_permalink(); ?>">do stuff</a></p>
-                    </div>
-                </div>
+                <?php if (!empty($terms) && !is_wp_error($terms)) {?>
+                    
+                    <?php 
+                        $icons = array('do', 'eat', 'sleep', 'wear'); 
+                        $i = 0;
+                    ?>
+				
+                    <?php foreach ($terms as $term) { ?>
+                        
+                        <div class="home-shop-item">
+                            <div class="shop-icon">
+                                <img src="<?php bloginfo( 'template_directory' ); ?>/images/product-type-icons/<?php echo $icons[$i] ?>.svg" alt="">
+                            </div>
+                            <div class="category-description">
+                                <p><?php echo $term->description ?> </p>
+                            </div>
+                            <div class="category-btn">
+                                <p><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name ?> stuff</a></p>
+                            </div>
+                        </div>
 
-                <div class="home-shop-item">
-                    <div class="shop-icon">
-                        <img src="images/product-type-icons/eat.svg">
-                    </div>
-                    <div class="category-description">
-                        <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-                    </div>
-                    <div class="category-btn">
-                        <p><a href="<?php the_permalink(); ?>">eat stuff</a></p>
-                    </div>
-                </div>
+                        <?php $i++;?>
 
-                <div class="home-shop-item">
-                    <div class="shop-icon">
-                        <img src="images/product-type-icons/sleep.svg">
-                    </div>
-                    <div class="category-description">
-                        <p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-                    </div>
-                    <div class="category-btn">
-                        <p><a href="<?php the_permalink(); ?>">sleep stuff</a></p>
-                    </div>
-                </div>
-
-                <div class="home-shop-item">
-                    <div class="shop-icon">
-                        <img src="images/product-type-icons/wear.svg">
-                    </div>
-                    <div class="category-description">
-                        <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-                    </div>
-                    <div class="category-btn">
-                        <p><a href="<?php the_permalink(); ?>">wear stuff</a></p>
-                    </div>
-                </div>
+                    <?php } ?>
+					
+				<?php } ?>
 
             </article>
-
-        </section>
-
-
-        <section class="home-container">
 
             <h1>inhabitent journal</h1>
 
             <article class="home-post-grid">
 
                 <?php $args = array(
-                    'order' => 'ASC',
+                    'order' => 'DESC',
                     'posts_per_page' => 3,
                     'post_type' => 'post',
                 ); ?>
@@ -105,10 +85,9 @@ get_header(); ?>
                                 <div class="entry-meta">
                                     <p><?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?></p>
                                 </div>
-
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-                                <p><a class="read-more" href="<?php the_permalink(); ?>">read entry →</a></p>
+                                
+                                <p><a class="read-more" href="<?php the_permalink(); ?>">read entry</a></p>
                             </div>
 
                         </div>
@@ -127,7 +106,6 @@ get_header(); ?>
             </article>
 
         </section>
-
 
     </main>
 </div>

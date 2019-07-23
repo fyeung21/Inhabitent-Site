@@ -30,7 +30,7 @@
     /* end */
 
     .product-grid-item {
-        display:flex;
+        
       .entry-header {
         align-items:flex-end;
         border: 1px solid $color_medium-gray;
@@ -83,4 +83,13 @@
       margin: 2.5rem 0 8rem 0;
     }
   }
+}
+
+.product-thumbnail {
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:100px;
+}
+.product-price {
+    color:#000;
 }

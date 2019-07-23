@@ -8,11 +8,24 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-				the_archive_title('<h1 class="page-title">', '</h1>');
-				the_archive_description('<div class="taxonomy-description">', '</div>');
+				echo '<h1 class="page-title">' . post_type_archive_title( '', false ) . '</h1>';
 				?>
+
+				<?php $terms = get_terms(array(
+					'taxonomy' => 'product_type',
+					'hide_empty' => false,
+				)); ?>
+
+				<?php if (!empty($terms) && !is_wp_error($terms)) {
+					echo '<ul class="term-links">';
+					foreach ($terms as $term) {
+						echo '<li><a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name . '</a></li>';
+					}
+					echo '</ul>';
+				} ?>
 			</header>
 
+			<div class="product-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -21,16 +34,18 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
+			</div>
+
 
 			<!-- why return an error on footer when deleting this? -->
 
-			<!-- <?php else : ?>
+			 <?php else : ?>
 
-				<?php get_template_part('template-parts/content', 'product'); ?>
+						<?php get_template_part('template-parts/content', 'none'); ?>
 
-				<?php endif; ?> -->
+				<?php endif; ?> 
 
-			<!---- #end --->
+		<!---- #end --->
 
 		<?php $args = array(
 			'order' => 'DESC',

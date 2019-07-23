@@ -10,11 +10,12 @@
                 <?php the_post_thumbnail('large'); ?>
             <?php endif; ?>
 
+            <!-- <div class="product-image" style="background-image:url(<?php echo CFS()->get('product_featured_image'); ?>)"></div>
+            </div> -->
+
             <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
             <div class="price">
-                <p>$$
-                    <!-- fill in! -->
-                </p>
+                    <p><?php echo CFS()->get('price'); ?></p>
             </div>
 
         </header><!-- .entry-header -->
