@@ -21,11 +21,11 @@ get_header(); ?>
         <?php if ($journal_posts->have_posts()) : ?>
 
             <?php while ($journal_posts->have_posts()) : $journal_posts->the_post(); ?>
+                <div class="journal-entry">
+                    <?php get_template_part('template-parts/content', ''); ?>
+                </div>
+                <p><a class="read-more" href="<?php the_permalink(); ?>">read more →</a></p>
 
-            <?php get_template_part( 'template-parts/content', '' ); ?>
-
-            <p><a class="read-more" href="<?php the_permalink(); ?>">read more →</a></p>
-            
             <?php endwhile; ?>
 
             <?php the_posts_navigation(); ?>

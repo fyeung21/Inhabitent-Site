@@ -57,28 +57,6 @@
     .price {
       font-family: $font_accent;
     }
-    .social-media-btn {
-      span {
-        padding: 0 0.5rem 0 0;
-      }
-      a {
-        color: #000;
-        text-transform: uppercase;
-        text-decoration: none;
-        border: 1px solid #000;
-        padding: 0.8rem 1.8rem;
-        font-family: $font_accent;
-        font-size: 14px;
-        &:hover {
-          background-color: $color_green;
-          color: #fff;
-          border: 1px solid $color_green;
-        }
-        &:visited {
-          color: #000;
-        }
-      }
-    }
     .entry-footer {
       margin: 2.5rem 0 8rem 0;
     }
@@ -93,3 +71,25 @@
 .product-price {
     color:#000;
 }
+.social-media-btn {
+    span {
+      padding: 0 0.5rem 0 0;
+    }
+    a {
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #000;
+      padding: 0.8rem 1.8rem;
+      font-family: $font_accent;
+      font-size: 14px;
+      &:hover {
+        background-color: $color_green;
+        color: #fff;
+        border: 1px solid $color_green;
+      }
+      &:visited {
+        color: #000;
+      }
+    }
+  }

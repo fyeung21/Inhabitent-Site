@@ -1,39 +1,43 @@
 /* About Page */
 
 .page-id-21 {
-    // .header-container {
-        //   max-width:100%;
-    //   }
-    .template-container {
-      max-width: 100%;
-      .content-area {
-        padding: 0;
-        .site-main {
+  .site-header {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }
+
+  .template-container {
+    max-width: 100%;
+    .content-area {
+      padding: 0;
+      .site-main {
+        max-width: 100%;
+        .entry-content {
           max-width: 100%;
-          .entry-content {
-            max-width: 100%;
-            margin: 0;
-          }
-          .entry-header {
-            display: none;
-          }
-          p {
-            max-width: 800px;
-            margin: 0 auto;
-            padding:1rem;
-          }
-          h2 {
-            text-align: center;
-          }
-          nav {
-            a:hover {
-              color: $color_yellow;
-            }
+          margin: 0;
+        }
+        .entry-header {
+          display: none;
+        }
+        p {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 1rem;
+        }
+        h2 {
+          text-align: center;
+        }
+        nav {
+          a:hover {
+            color: $color_yellow;
           }
         }
       }
     }
   }
+}
 
 .hero-image-header {
   max-width: 100%;
