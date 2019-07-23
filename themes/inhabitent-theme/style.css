@@ -873,7 +873,7 @@ object {
   max-width: 1120px;
   margin: 0 auto; }
 
-/* Featured Image */
+/* Additional Styling For Journal */
 .journal-entry .entry-header {
   position: relative; }
   .journal-entry .entry-header .entry-title {
@@ -929,6 +929,7 @@ object {
   .single-post .entry-footer .social-media-btn {
     margin: 2rem 0; }
 
+/* Comments */
 .comment-reply-title {
   font-size: 28px;
   color: #404040;
@@ -942,6 +943,15 @@ object {
 
 .form-submit {
   margin-bottom: 7rem; }
+
+/* Find Us */
+.post-28 h1 {
+  font-size: 38px; }
+
+.post-28 .entry-content {
+  margin-bottom: 7rem; }
+  .post-28 .entry-content iframe {
+    width: 750px; }
 
 .site-footer {
   display: -webkit-box;
