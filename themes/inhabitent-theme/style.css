@@ -387,6 +387,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Novocento Sans Web", Arial, sans-serif;
+  font-size: 38px;
   color: #2f1339;
   text-transform: uppercase; }
 
@@ -945,9 +946,6 @@ object {
   margin-bottom: 7rem; }
 
 /* Find Us */
-.post-28 h1 {
-  font-size: 38px; }
-
 .post-28 .entry-content {
   margin-bottom: 7rem; }
   .post-28 .entry-content iframe {
@@ -1023,11 +1021,14 @@ object {
       max-width: 100%; }
       .page-id-21 .template-container .content-area .site-main .entry-content {
         max-width: 100%;
-        margin: 0; }
+        margin: 0;
+        margin-bottom: 4rem; }
+        .page-id-21 .template-container .content-area .site-main .entry-content h2 {
+          margin: 0; }
       .page-id-21 .template-container .content-area .site-main .entry-header {
         display: none; }
       .page-id-21 .template-container .content-area .site-main p {
-        max-width: 800px;
+        max-width: 850px;
         margin: 0 auto;
         padding: 1rem; }
       .page-id-21 .template-container .content-area .site-main h2 {
@@ -1037,9 +1038,12 @@ object {
 
 .hero-image-header {
   max-width: 100%;
-  padding: 100px; }
+  width: auto;
+  height: 700px;
+  margin-bottom: 3rem; }
   .hero-image-header .entry-title {
-    color: #fff; }
+    color: #fff;
+    font-size: 48px; }
 
 /* Product Archives */
 .post-type-archive .page-header {

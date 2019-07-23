@@ -17,12 +17,16 @@
         .entry-content {
           max-width: 100%;
           margin: 0;
+          margin-bottom:4rem;
+          h2 {
+            margin:0;
+          }
         }
         .entry-header {
           display: none;
         }
         p {
-          max-width: 800px;
+          max-width: 850px;
           margin: 0 auto;
           padding: 1rem;
         }
@@ -41,8 +45,11 @@
 
 .hero-image-header {
   max-width: 100%;
-  padding: 100px;
+  width: auto;
+  height: 700px;
+  margin-bottom:3rem;
   .entry-title {
     color: #fff;
+    font-size:48px;
   }
 }
