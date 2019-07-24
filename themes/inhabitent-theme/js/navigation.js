@@ -4,7 +4,16 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-(function() {
+
+ jQuery(document).ready(function() {
+    jQuery(".search-submit").click(function() {
+     jQuery(".search-field").toggleClass ("active").focus().val("");
+     jQuery(this).toggleClass("animate");
+    });
+  });
+
+
+ (function() {
   let container, button, menu, links, i, len;
 
   container = document.getElementById('site-navigation');

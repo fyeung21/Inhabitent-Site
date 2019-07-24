@@ -598,6 +598,12 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .search-form {
+    border: none; }
+    .main-navigation .search-form .search-field {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 50px; }
 
 /* Small menu. */
 .menu-toggle,

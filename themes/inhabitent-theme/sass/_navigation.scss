@@ -93,6 +93,15 @@ a {
   .current-menu-item > a,
   .current_page_ancestor > a {
   }
+  .search-form {
+    border:none;
+    .search-field {
+      box-sizing: border-box;
+      border-radius:50px;
+    }
+  }
+
+
 }
 
 /* Small menu. */
