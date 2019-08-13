@@ -7,10 +7,10 @@
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
  * @package   Tent_Biz_Hours
- * @author    Fiona <fyeung21@gmail.com>
+ * @author    Fiona Yeung <fyeung21@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2015 Your Name or Company Name
+ * @link      https://github.com/fyeung21
+ * @copyright 2015 Fiona Yeung
  *
  * @wordpress-plugin
  * Plugin Name:       Inhabitent Business Hours
@@ -18,7 +18,7 @@
  * Description:       Adds business hours widget to sidebar.
  * Version:           1.0.0
  * Author:            Fiona Y.
- * Author URI:        @TODO
+ * Author URI:        https://github.com/fyeung21
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */

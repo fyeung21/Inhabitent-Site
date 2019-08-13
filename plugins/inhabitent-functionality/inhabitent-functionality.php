@@ -2,9 +2,9 @@
  /**
  *
  * @package   Inhabitent Functionality
- * @author    Fiona Yeung <yeung.fiona@hotmail.com>
+ * @author    Fiona Yeung <fyeung21@gmail.com>
  * @license   GPL-2.0+
- * @copyright 2019 Fiona
+ * @copyright 2019 Fiona Yeung
  *
  * @wordpress-plugin
  * Plugin Name: Inhabitent Functionality
