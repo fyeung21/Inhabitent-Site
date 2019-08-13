@@ -33,3 +33,19 @@ function inhabitent_url( $url ) {
     return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'inhabitent_url' );
+
+
+function custom_page_class( $classes ) {
+    if ( is_page('Front Page')) {
+		$classes[] = 'front-page';
+	}
+	if ( is_page('About')) {
+		$classes[] = 'about-page';
+	}
+	if ( is_page('Find Us')) {
+		$classes[] = 'find-us-page';
+	}
+    return $classes;
+}
+add_filter( 'body_class', 'custom_page_class');
+?>
