@@ -36,6 +36,9 @@ ehthumbs.db
 
 plugins/*
 !plugins/inhabitent-functionality
+!plugins/inhabitent-blocks-master
+!plugins/business-hours-widget
+!plugins/contact-widget
 
 themes/*
 !themes/inhabitent-theme

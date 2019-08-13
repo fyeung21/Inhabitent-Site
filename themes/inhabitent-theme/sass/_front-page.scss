@@ -107,7 +107,8 @@
         max-width: 100%;
         margin: 0 auto;
         img {
-          height: auto;
+          display:block;
+          height: 260px;
         }
       }
       .post-info-container {

@@ -1249,7 +1249,8 @@ object {
       max-width: 100%;
       margin: 0 auto; }
       .page-id-109 .home-post-grid .home-post-item .post-image img {
-        height: auto; }
+        display: block;
+        height: 260px; }
     .page-id-109 .home-post-grid .home-post-item .post-info-container {
       border-top: 5px solid #e1e1e1;
       padding: 1rem;

@@ -1,0 +1,14 @@
+{
+	"name": "inhabitent-blocks",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "cgb-scripts start",
+		"build": "cgb-scripts build",
+		"eject": "cgb-scripts eject"
+	},
+	"dependencies": {
+		"@wordpress/blocks": "^6.4.0",
+		"cgb-scripts": "1.9.7"
+	}
+}
