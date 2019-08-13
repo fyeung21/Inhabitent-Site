@@ -5,7 +5,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<header class="page-header">
-			<?php echo '<h1 class="page-title">' . post_type_archive_title('', false) . '</h1>'; ?>
+			<?php echo '<h1 class="page-title">' . post_type_archive_title('Shop Stuff', false) . '</h1>'; ?>
 
 			<?php $terms = get_terms(array(
 				'taxonomy' => 'product_type',
@@ -22,8 +22,9 @@ get_header(); ?>
 		</header>
 
 		<?php $args = array(
-			'order' => 'ASC',
 			'post_type' => 'product',
+			'order' => 'ASC',
+			'posts_per_page' => '16',
 		); ?>
 		<?php $product_posts = new WP_Query($args); ?>
 

@@ -12,8 +12,9 @@ get_header(); ?>
         </header>
 
         <?php $args = array(
-            'order' => 'ASC',
             'post_type' => 'product',
+            'order' => 'ASC',
+            'posts_per_page' => '16',
         ); ?>
         <?php $product_posts = new WP_Query($args); ?>
 
