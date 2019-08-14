@@ -717,12 +717,17 @@ a {
     .widget-area ul a {
       text-decoration: none; }
 
-.error-404 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .error-404 .page-content {
-    margin-right: 2.5rem; }
+.error-404 .page-content {
+  margin-right: 2.5rem; }
+
+.error-404 .widget-area {
+  border-left: none;
+  padding-left: 0; }
+  .error-404 .widget-area ul {
+    list-style: none; }
+  .error-404 .widget-area h2 {
+    font-size: 26px;
+    font-weight: 200; }
 
 /* Search widget. */
 .widget_search .search-submit {
