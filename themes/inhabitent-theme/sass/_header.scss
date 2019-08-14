@@ -1,0 +1,23 @@
+.site-header {
+    background:rgba(255,255,255, 0.3);
+    border-bottom: 1px solid #e1e1e1;
+    position:fixed;
+    top:0;
+    z-index:9999;
+    width:100%;
+    transition: top .5s linear;
+    .site-branding {
+      flex-basis: 50%;
+      img {
+        background-repeat: no-repeat;
+        width: 10%;
+      }
+    }
+  }
+  .header-container {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: baseline;
+    line-height: 0;
+  }

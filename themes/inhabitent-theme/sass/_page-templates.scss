@@ -1,20 +1,3 @@
-.site-header {
-  border-bottom: 1px solid #e1e1e1;
-  .site-branding {
-    flex-basis: 50%;
-    img {
-      background-repeat: no-repeat;
-      width: 10%;
-    }
-  }
-}
-.header-container {
-  display: flex;
-  max-width: 80%;
-  margin: 0 auto;
-  align-items: baseline;
-  line-height: 0;
-}
 .site-content {
   max-width: 1400px;
   width: 100%;
@@ -36,7 +19,7 @@
 
 /* Additional Styling For Journal */
 
-.journal-entry {
+.type-post, .journal-entry {
   .entry-header {
     position: relative;
     .entry-title {
@@ -116,6 +99,12 @@
   padding: 0.8rem 1.8rem;
   font-family: $font_accent_normal;
   font-size: 14px;
+  a {
+    color:#000;
+  }
+  &:visited {
+    color:#000;
+  }
   &:hover {
     background-color: $color_green;
     color: #fff;
@@ -131,5 +120,21 @@
     iframe {
       width: 750px;
     }
+  }
+}
+
+/* Archives */
+
+.page-title {
+  color:#404040;
+  font-size:40px;
+  border-bottom:1px $solid_border;
+  padding-bottom:10px;
+}
+
+.site-main {
+  margin-bottom:8rem;
+  .post-article {
+    margin-bottom:5rem;
   }
 }

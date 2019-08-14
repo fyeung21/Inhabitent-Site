@@ -1,30 +1,23 @@
-<?php
-/**
- * The template for displaying archive pages.
- *
- * @package RED_Starter_Theme
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
+		<?php if (have_posts()) : ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				the_archive_title('<h1 class="page-title">', '</h1>');
+				the_archive_description('<div class="taxonomy-description">', '</div>');
 				?>
-			</header><!-- .page-header -->
+			</header>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<div class="post-article">
+					<?php get_template_part('template-parts/content');?>
+					<p><a class="read-more" href="<?php the_permalink(); ?>">read more →</a></p>
+				</div>
 
 			<?php endwhile; ?>
 
@@ -32,12 +25,12 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part('template-parts/content', 'none'); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main>
+</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
