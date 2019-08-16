@@ -10,7 +10,6 @@
     flex-basis: 50%;
     img {
       background-repeat: no-repeat;
-      // width: 10%;
       height:35px;
     }
   }
@@ -53,7 +52,7 @@
   input[type=text] {
     background: transparent;
     border: none;
-    font-family: $font_accent;
+    font-family: $font_accent_normal;
     font-weight: 200;
     text-transform: uppercase;
     color: $color_medium-gray;

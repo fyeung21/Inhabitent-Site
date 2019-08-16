@@ -125,7 +125,7 @@
 }
 
 /* Archives */
-.date {
+.date, .search-results {
   .page-title {
     color: #404040;
     font-size: 40px;
@@ -139,4 +139,20 @@
   .post-article {
     margin-bottom: 5rem;
   }
+}
+
+/* Search Results */
+.entry-title-result {
+  a {
+  text-decoration: none;
+  font-size:34px;
+  }
+}
+.entry-meta-result {
+  font-family:$font-accent_normal;
+  font-size:18px;
+  font-weight:200;
+}
+.entry-summary {
+  margin-bottom:5rem;
 }

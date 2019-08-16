@@ -960,7 +960,7 @@ object {
     width: 750px; }
 
 /* Archives */
-.date .page-title {
+.date .page-title, .search-results .page-title {
   color: #404040;
   font-size: 40px;
   border-bottom: 1px solid #e1e1e1;
@@ -970,6 +970,19 @@ object {
   margin-bottom: 8rem; }
   .site-main .post-article {
     margin-bottom: 5rem; }
+
+/* Search Results */
+.entry-title-result a {
+  text-decoration: none;
+  font-size: 34px; }
+
+.entry-meta-result {
+  font-family: "novecento_sans_widenormal", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 200; }
+
+.entry-summary {
+  margin-bottom: 5rem; }
 
 .site-footer {
   color: #fff; }
@@ -1077,7 +1090,7 @@ object {
 .search-bar input[type=text] {
   background: transparent;
   border: none;
-  font-family: "novecento_sans_widedemibold", Arial, sans-serif;
+  font-family: "novecento_sans_widenormal", Arial, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   color: #808080;
