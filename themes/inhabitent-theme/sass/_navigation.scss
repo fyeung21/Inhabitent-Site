@@ -26,16 +26,23 @@ a {
 
 /* Menus */
 
+.menu-menu1-container {
+  margin:7px 0;
+}
 .main-navigation {
   clear: both;
-  display: block;
+  display: flex;
   font-family: $font_accent_normal;
   text-transform: uppercase;
+  width:100%;
+  justify-content: flex-end;
+  padding:7px 0;
 
   ul {
     display: none;
     list-style: none;
     padding-left: 0;
+    margin:0 auto;
 
     ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -92,13 +99,6 @@ a {
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-  }
-  .search-form {
-    border:none;
-    .search-field {
-      box-sizing: border-box;
-      border-radius:50px;
-    }
   }
 }
 

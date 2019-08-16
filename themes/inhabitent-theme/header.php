@@ -1,12 +1,3 @@
-<?php
-
-/**
- * The header for our theme.
- *
- * @package RED_Starter_Theme
- */
-
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -27,7 +18,6 @@
 			<div class="header-container">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-					<p class="site-description"></p>
 
 					<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logos/inhabitent-logo-tent.svg" alt="homepage"></a>
 
@@ -36,9 +26,8 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-					<div class="wrapper">
+					<div class="search-bar">
 						<?php echo get_search_form(); ?>
-						</div>
 					</div>
 				</nav><!-- #site-navigation -->
 			</div>

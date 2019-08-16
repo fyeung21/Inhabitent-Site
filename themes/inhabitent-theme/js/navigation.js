@@ -3,17 +3,32 @@
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
+ * Also added js for toggle search here.
  */
 
- jQuery(document).ready(function() {
-    jQuery(".search-submit").click(function() {
-     jQuery(".search-field").toggleClass ("active").focus().val("");
-     jQuery(this).toggleClass("animate");
-    });
+jQuery(document).ready(function ($) {
+  const $search_submit = $(".search-submit"),
+        $search_field = $(".search-field"),
+        $this = $(this);
+
+  $search_submit.on("click", function (event) {
+
+    //still registers as a click function so need to stop event from happening on first click
+    if (!$(event.currentTarget).hasClass('search-active')) {
+      event.preventDefault();
+      $(event.currentTarget).addClass('search-active');
+    } else {
+      $(event.currentTarget).removeClass('search-active');
+    }
+
+    $search_field.toggleClass("active").focus();
+    $this.toggleClass("animate");
   });
 
+});
 
- (function() {
+
+(function () {
   let i, len;
 
   const container = document.getElementById('site-navigation');
@@ -39,7 +54,7 @@
     menu.className += ' nav-menu';
   }
 
-  button.onclick = function() {
+  button.onclick = function () {
     if (-1 !== container.className.indexOf('toggled')) {
       container.className = container.className.replace(' toggled', '');
       button.setAttribute('aria-expanded', 'false');
@@ -64,7 +79,7 @@
    * Sets or removes .focus class on an element.
    */
   function toggleFocus() {
-    const self = this;
+    let self = this;
 
     // Move up through the ancestors of the current link until we hit .nav-menu.
     while (-1 === self.className.indexOf('nav-menu')) {
@@ -84,14 +99,14 @@
   /**
    * Toggles `focus` class to allow submenu access on tablets.
    */
-  (function(container) {
+  (function (container) {
     let touchStartFn, i;
-      const parentLink = container.querySelectorAll(
-        '.menu-item-has-children > a, .page_item_has_children > a'
-      );
+    const parentLink = container.querySelectorAll(
+      '.menu-item-has-children > a, .page_item_has_children > a'
+    );
 
     if ('ontouchstart' in window) {
-      touchStartFn = function(e) {
+      touchStartFn = function (e) {
         let menuItem = this.parentNode,
           i;
 
