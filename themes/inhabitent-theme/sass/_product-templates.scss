@@ -87,13 +87,17 @@
 /* Single Product */
 
 .product-single-page {
-  display: grid;
+  display: flex;
   margin-top:3rem;
   .product-image {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
-    width: auto;
+    height: 400px;
+    width: 50%;
+    margin:40px 40px 40px 0;
+  }
+  .product-container {
+    width:50%;
   }
 
   .entry-title {
@@ -102,7 +106,7 @@
   .price {
     color: $color__text-main;
     font-family: $font_accent;
-    font-size: 20px;
+    font-size: 26px;
   }
   .entry-footer {
     margin: 2.5rem 0 8rem 0;

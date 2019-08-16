@@ -14,12 +14,13 @@
 }
 .template-container {
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
 /* Additional Styling For Journal */
 
-.type-post, .journal-entry {
+.type-post,
+.journal-entry {
   .entry-header {
     position: relative;
     .entry-title {
@@ -86,7 +87,7 @@
     .social-media-btn {
       margin: 2rem 0;
       a {
-      font-family: $font_accent_normal;
+        font-family: $font_accent_normal;
       }
     }
   }
@@ -100,10 +101,10 @@
   font-family: $font_accent_normal;
   font-size: 14px;
   a {
-    color:#000;
+    color: #000;
   }
   &:visited {
-    color:#000;
+    color: #000;
   }
   &:hover {
     background-color: $color_green;
@@ -124,17 +125,18 @@
 }
 
 /* Archives */
-
-.page-title {
-  color:#404040;
-  font-size:40px;
-  border-bottom:1px $solid_border;
-  padding-bottom:10px;
+.date {
+  .page-title {
+    color: #404040;
+    font-size: 40px;
+    border-bottom: 1px $solid_border;
+    padding-bottom: 10px;
+  }
 }
 
 .site-main {
-  margin-bottom:8rem;
+  margin-bottom: 8rem;
   .post-article {
-    margin-bottom:5rem;
+    margin-bottom: 5rem;
   }
 }

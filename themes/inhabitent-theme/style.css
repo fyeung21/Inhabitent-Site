@@ -868,12 +868,14 @@ object {
 
 .template-container {
   max-width: 1120px;
-  margin: 0 auto; }
+  margin: 20px auto 0; }
 
 /* Additional Styling For Journal */
-.type-post .entry-header, .journal-entry .entry-header {
+.type-post .entry-header,
+.journal-entry .entry-header {
   position: relative; }
-  .type-post .entry-header .entry-title, .journal-entry .entry-header .entry-title {
+  .type-post .entry-header .entry-title,
+  .journal-entry .entry-header .entry-title {
     background-color: #248A83;
     width: 580px;
     position: absolute;
@@ -881,22 +883,27 @@ object {
     line-height: 1.25;
     left: 0;
     top: 3rem; }
-    .type-post .entry-header .entry-title h1, .journal-entry .entry-header .entry-title h1 {
+    .type-post .entry-header .entry-title h1,
+    .journal-entry .entry-header .entry-title h1 {
       margin: 0; }
-    .type-post .entry-header .entry-title a, .journal-entry .entry-header .entry-title a {
+    .type-post .entry-header .entry-title a,
+    .journal-entry .entry-header .entry-title a {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 33.6px; }
 
-.type-post img, .journal-entry img {
+.type-post img,
+.journal-entry img {
   width: 800px;
   margin-top: 2rem; }
 
-.type-post p, .journal-entry p {
+.type-post p,
+.journal-entry p {
   margin: 1.5rem 0; }
 
-.type-post .entry-meta, .journal-entry .entry-meta {
+.type-post .entry-meta,
+.journal-entry .entry-meta {
   background-color: #248A83;
   color: #fff;
   font-family: "novecento_sans_widenormal", Arial, sans-serif;
@@ -906,10 +913,12 @@ object {
   right: 0;
   bottom: 8px; }
 
-.type-post .read-more a, .journal-entry .read-more a {
+.type-post .read-more a,
+.journal-entry .read-more a {
   color: #000; }
 
-.type-post .read-more:visited, .journal-entry .read-more:visited {
+.type-post .read-more:visited,
+.journal-entry .read-more:visited {
   color: #000; }
 
 .single-post .entry-title {
@@ -951,7 +960,7 @@ object {
     width: 750px; }
 
 /* Archives */
-.page-title {
+.date .page-title {
   color: #404040;
   font-size: 40px;
   border-bottom: 1px solid #e1e1e1;
@@ -1018,7 +1027,7 @@ object {
   font-family: "novecento_sans_widenormal", Arial, sans-serif; }
 
 .site-header {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
   top: 0;
@@ -1200,19 +1209,24 @@ object {
 
 /* Single Product */
 .product-single-page {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 3rem; }
   .product-single-page .product-image {
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
-    width: auto; }
+    height: 400px;
+    width: 50%;
+    margin: 40px 40px 40px 0; }
+  .product-single-page .product-container {
+    width: 50%; }
   .product-single-page .entry-title {
     color: #d99054; }
   .product-single-page .price {
     color: #404040;
     font-family: "novecento_sans_widedemibold", Arial, sans-serif;
-    font-size: 20px; }
+    font-size: 26px; }
   .product-single-page .entry-footer {
     margin: 2.5rem 0 8rem 0; }
 
@@ -1317,7 +1331,7 @@ object {
       height: 105px; }
       .front-page .home-post-grid .home-post-item h2 a {
         text-decoration: none;
-        font-size: 20px; }
+        font-size: 24px; }
     .front-page .home-post-grid .home-post-item .post-image {
       max-width: 100%;
       margin: 0 auto; }
