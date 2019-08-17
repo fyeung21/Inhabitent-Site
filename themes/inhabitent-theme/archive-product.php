@@ -5,7 +5,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<header class="page-header">
-			<?php echo '<h1 class="page-title">' . post_type_archive_title('Shop Stuff', false) . '</h1>'; ?>
+			<?php echo '<h1 class="page-title">shop stuff</h1>'; ?>
 
 			<?php $terms = get_terms(array(
 				'taxonomy' => 'product_type',
