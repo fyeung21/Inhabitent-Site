@@ -6,7 +6,9 @@ A fictional shopping site related to all things camping and includes a blog, pow
 
 1. Clone this project and add to your htdocs in MAMP.
 
-2. Run gulp.
+2. Open terminal and run npm install in inhabitent-theme folder.
+
+3. Run gulp.
 
 
 # Technologies
@@ -27,5 +29,11 @@ A fictional shopping site related to all things camping and includes a blog, pow
 
 * Learned how to create a custom theme for Wordpress Blogs, and customize the dashboard for client use.
 
+# Screenshots
+
+<img src="themes/inhabitent-theme/images/front_page.png">
+<img src="themes/inhabitent-theme/images/shop.png">
+<img src="themes/inhabitent-theme/images/journal.png">
+<img src="themes/inhabitent-theme/images/about.png">
 
 
