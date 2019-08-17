@@ -1,13 +1,39 @@
 .about-page {
   .site-header {
     position: absolute;
-    z-index: 1;
     left: 0;
     right: 0;
+    background: none;
+    border-bottom: none;
+  }
+  .main-navigation {
+    a {
+      color: #fff;
+      &:hover {
+        color: $color_yellow;
+      }
+    }
+  }
+  .search-bar {
+    .search-submit {
+      .fa {
+        color: #fff;
+        &:hover {
+          color: $color_yellow;
+        }
+      }
+    }
+    input[type=text] {
+      color: #fff;
+      &::placeholder {
+        color:$color_yellow;
+      }
+    }
   }
 
   .template-container {
     max-width: 100%;
+    margin-top:0;
     .content-area {
       padding: 0;
       .site-main {

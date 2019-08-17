@@ -1108,12 +1108,33 @@ object {
 
 .about-page .site-header {
   position: absolute;
-  z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  background: none;
+  border-bottom: none; }
+
+.about-page .main-navigation a {
+  color: #fff; }
+  .about-page .main-navigation a:hover {
+    color: #f0e4d1; }
+
+.about-page .search-bar .search-submit .fa {
+  color: #fff; }
+  .about-page .search-bar .search-submit .fa:hover {
+    color: #f0e4d1; }
+
+.about-page .search-bar input[type=text] {
+  color: #fff; }
+  .about-page .search-bar input[type=text]::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .about-page .search-bar input[type=text]::-ms-input-placeholder {
+    color: #f0e4d1; }
+  .about-page .search-bar input[type=text]::placeholder {
+    color: #f0e4d1; }
 
 .about-page .template-container {
-  max-width: 100%; }
+  max-width: 100%;
+  margin-top: 0; }
   .about-page .template-container .content-area {
     padding: 0; }
     .about-page .template-container .content-area .site-main {
@@ -1263,9 +1284,29 @@ object {
 
 .front-page .site-header {
   position: absolute;
-  z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  background: none;
+  border-bottom: none; }
+
+.front-page .main-navigation a {
+  color: #fff; }
+  .front-page .main-navigation a:hover {
+    color: #f0e4d1; }
+
+.front-page .search-bar .search-submit .fa {
+  color: #fff; }
+  .front-page .search-bar .search-submit .fa:hover {
+    color: #f0e4d1; }
+
+.front-page .search-bar input[type=text] {
+  color: #fff; }
+  .front-page .search-bar input[type=text]::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .front-page .search-bar input[type=text]::-ms-input-placeholder {
+    color: #f0e4d1; }
+  .front-page .search-bar input[type=text]::placeholder {
+    color: #f0e4d1; }
 
 .front-page h1 {
   text-align: center;
